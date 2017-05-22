@@ -1,0 +1,10 @@
+CREATE TABLE Materias (
+    codMateria     STRING (6)  PRIMARY KEY
+                               UNIQUE
+                               NOT NULL,
+    disciplina     STRING (50) UNIQUE
+                               NOT NULL,
+    posFluxo       STRING (1)  NOT NULL,
+    creditos       STRING (2)  NOT NULL,
+    caracteristica STRING (3) 
+);
