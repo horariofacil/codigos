@@ -1,0 +1,9 @@
+CREATE TABLE Usuario (
+    matrícula STRING (9)   UNIQUE
+                           NOT NULL
+                           PRIMARY KEY,
+    senha     STRING (50)  NOT NULL,
+    nome      STRING (100) NOT NULL,
+    sobrenome STRING (100) NOT NULL,
+    email     STRING (100) NOT NULL
+);
