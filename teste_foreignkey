@@ -54,7 +54,7 @@ INSERT INTO Requisitos (
 	('193682', '118001'),
 	('193682', '113051'),
 	('208698', '201626'),
-	('208698', '206580'), // Damarcones continuar aqui
+	('208698', '206580'), // continuar aqui
 	;
 
 PRAGMA foreign_keys = 1;
