@@ -1,8 +1,7 @@
 CREATE TABLE IF NOT EXISTS Concluido (
-    codUser    VARCHAR (9) UNIQUE
-                           NOT NULL,
-    codMateria VARCHAR (6) NOT NULL
-                           UNIQUE,
-    cursada    BOOLEAN (1) NOT NULL,
-    FOREIGN KEY (codMateria) REFERENCES Materias(codMateria)
+    codUser    VARCHAR (9) NOT NULL,
+    codMateria VARCHAR (6) NOT NULL,
+    cursada    BOOLEAN NOT NULL,
+    FOREIGN KEY (codMateria) REFERENCES Materias(codMateria),
+    FOREIGN KEY (codUser) REFERENCES Usuario(matrucula)
 );
