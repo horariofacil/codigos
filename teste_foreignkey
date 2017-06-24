@@ -1,0 +1,17 @@
+PRAGMA foreign_keys = 0;
+
+CREATE TABLE IF NOT EXISTS Requisitos (
+	codMateria STRING (6) PRIMARY KEY NOT NULL AUTOINCREMENT,
+	codRequisito STRING (6) UNIQUE NOT NULL,
+	FOREIGN KEY(codRequisito) REFERENCES Materias(codMateria)
+);
+
+INSERT INTO Requisitos (
+	codMateria,
+	codRequisito
+	)
+	VALUES ('113042', '113034'),
+	('193674', '119466'),
+	('193674', '119482');
+
+PRAGMA foreign_keys = 1;
