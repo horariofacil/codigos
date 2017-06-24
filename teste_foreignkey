@@ -1,9 +1,9 @@
 PRAGMA foreign_keys = 0;
 
 CREATE TABLE IF NOT EXISTS Requisitos (
-	codMateria STRING (6) PRIMARY KEY NOT NULL AUTOINCREMENT,
-	codRequisito STRING (6) UNIQUE NOT NULL,
-	FOREIGN KEY(codRequisito) REFERENCES Materias(codMateria)
+	codMateria VARCHAR (6) UNIQUE NOT NULL,
+	codRequisito VARCHAR (6) UNIQUE NOT NULL,
+	FOREIGN KEY(codMateria) REFERENCES Materias(codMateria)
 );
 
 INSERT INTO Requisitos (
