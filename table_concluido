@@ -1,0 +1,8 @@
+CREATE TABLE IF NOT EXISTS Concluido (
+    codUser    VARCHAR (9) UNIQUE
+                           NOT NULL,
+    codMateria VARCHAR (6) NOT NULL
+                           UNIQUE,
+    cursada    BOOLEAN (1) NOT NULL,
+    FOREIGN KEY (codMateria) REFERENCES Materias(codMateria)
+);
