@@ -3,5 +3,5 @@ CREATE TABLE IF NOT EXISTS Concluido (
     codMateria VARCHAR (6) NOT NULL,
     cursada    BOOLEAN NOT NULL,
     FOREIGN KEY (codMateria) REFERENCES Materias(codMateria),
-    FOREIGN KEY (codUser) REFERENCES Usuario(matrucula)
+    FOREIGN KEY (codUser) REFERENCES Usuario(matricula)
 );
